@@ -1,6 +1,7 @@
 # Cria um dicionário vazio para armazenar os dados de cadastro
 cadastros = {}
 
+novos_cadastro = {}
 # Função para registrar um novo usuário
 def registrar_usuario():
     nome = input("Digite seu nome: ")
@@ -8,8 +9,7 @@ def registrar_usuario():
     senha = input("Digite sua senha: ")
     cadastros[email] = {'Nome': nome, 'Senha': senha}
     print("Cadastro realizado com sucesso!")
-
-# Função para exibir todos os usuários registrados
+    
 def listar_usuarios():
     print("\nLista de Usuários Registrados:")
     for email, dados in cadastros.items():
