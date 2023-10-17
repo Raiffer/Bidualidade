@@ -8,7 +8,7 @@ def registrar_usuario():
     email = input("Digite seu e-mail: ")
     senha = input("Digite sua senha: ")
     cadastros[email] = {'Nome': nome, 'Senha': senha}
-    print("Cadastro realizado com sucesso!")
+    print("Cadastr realizado com sucesso!")
     
 def listar_usuarios():
     print("\nLista de Usuários Registrados:")
